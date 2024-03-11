@@ -48,7 +48,7 @@ function numBtnClick(event) {
     // display2.textContent = '';
     let inputValue = event.target.value;
     display.textContent += inputValue;
-    display2.textContent += inputValue;
+    display2.textContent = inputValue;
 }
 
 numBtn.forEach(element => {
@@ -56,7 +56,7 @@ numBtn.forEach(element => {
 });
 addBtn.addEventListener('click', () => {
     operator = '+';
-    display2.textContent = '';
+    // display2.textContent = '';
     display.textContent += operator;
     addBtn.style.backgroundColor = "pink"
 });
